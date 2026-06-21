@@ -26,7 +26,7 @@ export const botConfig = {
         // Text users will see (example: "Playing /help | Titan Bot").
         name: "Moderating your server Carefully. 👀",
         // Activity type number (0 = Playing).
-        type: 0,
+        type: 1,
       },
     ],
   },
@@ -78,7 +78,7 @@ export const botConfig = {
     deleteDeniedAfter: 7,
 
     // Auto-delete approved applications after this many days.
-    deleteApprovedAfter: 30,
+    deleteApprovedAfter: 3,
 
     // Role IDs allowed to manage applications.
     managerRoles: [], // Will be populated from environment or database
@@ -167,28 +167,28 @@ export const botConfig = {
     },
 
     // Starting balance for new users.
-    startingBalance: 0,
+    startingBalance: 1500,
 
     // Maximum bank amount before upgrades (if upgrades are used).
-    baseBankCapacity: 100000,
+    baseBankCapacity: 100000000,
 
     // Daily reward amount.
-    dailyAmount: 100,
+    dailyAmount: 670,
 
     // Work command random payout range.
-    workMin: 10,
-    workMax: 100,
+    workMin: 200,
+    workMax: 450,
 
     // Beg command random payout range.
     begMin: 5,
     begMax: 50,
 
     // Chance to succeed when robbing (0.4 = 40%).
-    robSuccessRate: 0.4,
+    robSuccessRate: 40,
 
     // Jail time after failed rob (milliseconds).
     // 3600000 = 1 hour.
-    robFailJailTime: 3600000,
+    robFailJailTime: 1800000,
   },
 
   // =========================
